@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ArrowRight, Heart, Users, MapPin } from 'lucide-react';
 
@@ -26,6 +25,17 @@ const Hero = () => {
 
   return (
     <section id="home" className="pt-16 min-h-screen flex items-center justify-center relative overflow-hidden">
+      {/* Colorful Pet Background */}
+      <div 
+        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-20"
+        style={{
+          backgroundImage: `url('https://images.unsplash.com/photo-1535268647677-300dbf3d78d1?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')`
+        }}
+      ></div>
+      
+      {/* Colorful Gradient Overlay */}
+      <div className="absolute inset-0 z-0 bg-gradient-to-br from-purple-200/60 via-pink-200/60 to-orange-200/60"></div>
+
       {/* Animated Background Elements */}
       <div className="absolute inset-0 z-0">
         <div className="absolute top-20 left-10 w-20 h-20 bg-purple-300/30 rounded-full animate-bounce"></div>
