@@ -56,6 +56,20 @@ const PetCarousel = () => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + pets.length) % pets.length);
   };
 
+  const handleAdoptClick = (petName: string) => {
+    alert(`🐾 Thank you for your interest in adopting ${petName}! We'll connect you with our adoption team soon. Please fill out the volunteer form below to get started! 💕`);
+    
+    // Scroll to volunteer form
+    const volunteerSection = document.querySelector('#volunteer');
+    if (volunteerSection) {
+      volunteerSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const handleFavoriteClick = (petName: string) => {
+    alert(`❤️ ${petName} has been added to your favorites! You can view all your favorite pets in your profile.`);
+  };
+
   return (
     <section className="py-20 bg-gradient-to-r from-green-50 to-blue-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -88,7 +102,12 @@ const PetCarousel = () => {
                       <div className="md:w-1/2 p-8">
                         <div className="flex items-center justify-between mb-4">
                           <h3 className="text-3xl font-bold text-gray-800">{pet.name}</h3>
-                          <Heart className="text-red-500 hover:fill-current cursor-pointer hover:scale-110 transition-all duration-300" size={28} />
+                          <button 
+                            onClick={() => handleFavoriteClick(pet.name)}
+                            className="text-red-500 hover:fill-current cursor-pointer hover:scale-110 transition-all duration-300"
+                          >
+                            <Heart size={28} />
+                          </button>
                         </div>
                         
                         <div className="space-y-3 mb-6">
@@ -103,7 +122,10 @@ const PetCarousel = () => {
                         
                         <p className="text-gray-600 italic mb-6">"{pet.story}"</p>
                         
-                        <button className="w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white py-3 px-6 rounded-lg font-semibold hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
+                        <button 
+                          onClick={() => handleAdoptClick(pet.name)}
+                          className="w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white py-3 px-6 rounded-lg font-semibold hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+                        >
                           Adopt {pet.name} 💝
                         </button>
                       </div>

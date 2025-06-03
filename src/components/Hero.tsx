@@ -3,6 +3,27 @@ import React from 'react';
 import { ArrowRight, Heart, Users, MapPin } from 'lucide-react';
 
 const Hero = () => {
+  const handleJoinMovement = () => {
+    const volunteerSection = document.querySelector('#volunteer');
+    if (volunteerSection) {
+      volunteerSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const handleVolunteerNow = () => {
+    const volunteerSection = document.querySelector('#volunteer');
+    if (volunteerSection) {
+      volunteerSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const handleLearnMore = () => {
+    const impactSection = document.querySelector('#impact');
+    if (impactSection) {
+      impactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section id="home" className="pt-16 min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Animated Background Elements */}
@@ -26,16 +47,25 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <button className="group bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center gap-2">
+            <button 
+              onClick={handleJoinMovement}
+              className="group bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center gap-2"
+            >
               Join the Movement
               <ArrowRight className="group-hover:translate-x-1 transition-transform duration-300" size={20} />
             </button>
             
-            <button className="bg-white text-purple-600 border-2 border-purple-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-purple-600 hover:text-white hover:scale-105 transition-all duration-300 shadow-lg">
+            <button 
+              onClick={handleVolunteerNow}
+              className="bg-white text-purple-600 border-2 border-purple-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-purple-600 hover:text-white hover:scale-105 transition-all duration-300 shadow-lg"
+            >
               Volunteer Now
             </button>
             
-            <button className="text-gray-700 hover:text-purple-600 px-8 py-4 rounded-full text-lg font-semibold hover:scale-105 transition-all duration-300 underline decoration-wavy decoration-purple-400">
+            <button 
+              onClick={handleLearnMore}
+              className="text-gray-700 hover:text-purple-600 px-8 py-4 rounded-full text-lg font-semibold hover:scale-105 transition-all duration-300 underline decoration-wavy decoration-purple-400"
+            >
               Learn More
             </button>
           </div>
