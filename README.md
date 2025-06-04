@@ -1,73 +1,60 @@
-# Welcome to your Lovable project
+# Pet-Friendly City Hub
 
-## Project info
+## 🐾 Overview
+Pet-Friendly City Hub is a web application designed to help pet owners and enthusiasts discover pet-friendly places within their city. Whether you're looking for parks, cafes, or stores that welcome pets, this hub provides comprehensive information to make outings with your furry friends enjoyable and hassle-free.
 
-**URL**: https://lovable.dev/projects/762e31a2-41bf-4648-8a2c-faf3875cae2f
+## 🚀 Features
+1.Search for pet-friendly locations in your city
+2.View detailed information about each location
+3.User-friendly interface for easy navigation
+4.Responsive design for mobile and desktop users
 
-## How can I edit this code?
+## 🛠️ Technologies Used
+HTML
+CSS
+JavaScript
+Tailwind CSS
+TypeScript
 
-There are several ways of editing your application.
+## 📦 Installation
+1. Clone the repository:
+git clone https://github.com/Sridhar1431S/pet-friendly-city-hub.git
 
-**Use Lovable**
+2. Navigate to the project directory:
+cd pet-friendly-city-hub
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/762e31a2-41bf-4648-8a2c-faf3875cae2f) and start prompting.
+3. Open index.html in your preferred web browser.
 
-Changes made via Lovable will be committed automatically to this repo.
 
-**Use your preferred IDE**
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+![Screenshot 2025-06-04 015640](https://github.com/user-attachments/assets/ac5f21f0-aeb0-4003-8928-6c7e96d215d9)
 
-Follow these steps:
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
 
-# Step 3: Install the necessary dependencies.
-npm i
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
 
-**Edit a file directly in GitHub**
+![Screenshot 2025-06-04 173821](https://github.com/user-attachments/assets/77874b8b-2dbb-4d91-a5d1-196fc301c4ff)
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
 
-**Use GitHub Codespaces**
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
 
-## What technologies are used for this project?
 
-This project is built with:
+![Screenshot 2025-06-04 173836](https://github.com/user-attachments/assets/e5f337eb-1521-4b3c-a735-72f624347a79)
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
 
-## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/762e31a2-41bf-4648-8a2c-faf3875cae2f) and click on Share -> Publish.
 
-## Can I connect a custom domain to my Lovable project?
+![Screenshot 2025-06-04 173858](https://github.com/user-attachments/assets/5cad8acb-295b-49ff-aefc-8ecbfd468f21)
 
-Yes, you can!
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+
+
+
+## 🙌 Contributing
+Contributions are welcome! Please fork the repository and submit a pull request for any enhancements or bug fixes.
+
+## 📄 License
+This project is licensed under the MIT License.
